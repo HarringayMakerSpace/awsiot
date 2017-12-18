@@ -12,10 +12,10 @@ extern "C" {
 #include "libb64/cdecode.h"
 }
 
-const char* ssid = "BTHub5-72W5";
-const char* password = "46d38ec753";
+const char* ssid = "<yourSSID>";
+const char* password = "<yourPSWD>";
 
-const char* awsEndpoint = "aebmz9k7b83pa.iot.us-west-2.amazonaws.com";
+const char* awsEndpoint = "xxxxxxxxxx.iot.us-west-2.amazonaws.com";
 
 // For the two certificate strings below paste in the text of your AWS 
 // device certificate and private key, comment out the BEGIN and END 
@@ -28,7 +28,7 @@ const String certificatePemCrt = \
 "MIIDWTCCAkGgAwIBAgIUQNkz+5jPnrBkY+0xAK7oIPZSvWwwDQYJKoZIhvcNAQEL" \
 "BQAwTTFLMEkGA1UECwxCQW1hem9uIFdlYiBTZXJ2aWNlcyBPPUFtYXpvbi5jb20g" \
 "SW5jLiBMPVNlYXR0bGUgU1Q9V2FzaGluZ3RvbiBDPVVTMB4XDTE3MTIxNzEwNDMy" \
-"OFoXDTQ5MTIzMTIzNTk1OVowHjEcMBoGA1UEAwwTQVdTIElvVCBDZXJ0aWZpY2F0" \
+"OFoXDTQ5MTIzMTIzNTk1OVowHjEcMBoGAaseAwwTQVdTIElvVCBDZXJ0aWZpY2F0" \
 "ZTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAPAG3DPHYLqwhRrp5erJ" \
 "6Nn24IGCGwMKGTU5mF2cBDPnwcTdAA8kX71EuhRBqhNM5zhxmsWj+zAmXfMKKT7L" \
 "pvRfFyca1BwZH2bYBDmJbyITJAnljR6Jh6lPdGPm0vx2uaVYmI2s2pjQeVyKHl5I" \
@@ -51,7 +51,7 @@ const String privatePemKey = \
 "MIIEpAIBAAKCAQEA8AbcM8dgurCFGunl6sno2fbggYIbAwoZNTmYXZwEM+fBxN0A" \
 "DyRfvUS6FEGqE0znOHGaxaP7MCZd8wopPsum9F8XJxrUHBkfZtgEOYlvIhMkCeWN" \
 "HomHqU90Y+bS/Ha5pViYjazamNB5XIoeXkgAUmlMbOhVm3HLgR4OYMWGIOsQY2qn" \
-"MMQFFw2fIQ3V8Hu699K30KBcyuMfaQUTEdQIYJDBptaHCukWYqZejaAMp/mHbbVd" \
+"MMQFFw2fIQ3V8Hu699K30KBcyuaMeQUTEdQIYJDBptaHCukWYqZejaAMp/mHbbVd" \
 "0L3XraQ7MKANxT6QvTRwAcPhq9g6ujSn1bsY/Bd4yFaJ4INOO0iymz8QJ3bqUuUL" \
 "NF91NaqOuZm0pWkXI1cJn08urdMMz+X3LSOYjQIDAQABAoIBAEQi7meUdZUJfv+A" \
 "3k+kOYGGX3zkHh7iwv0k+Ge6XkcNxyfHRLkHrlXgKKKPcWRBNHIFbdYlEq08dvcD" \
