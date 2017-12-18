@@ -3,6 +3,9 @@
  * Simplest possible example (that I could come up with) of using an ESP8266 with AWS IoT.
  * No messing with openssl or spiffs just regular pubsub and certificates in string constants
  * 
+ * Note: For this to work you do need to do this:
+ *       https://github.com/esp8266/Arduino/issues/3944
+ *
  * Author: Anthony Elder 
  * License: Apache License v2
  */
