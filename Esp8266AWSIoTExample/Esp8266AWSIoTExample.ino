@@ -91,11 +91,11 @@ void setup() {
   WiFi.waitForConnectResult();
   Serial.print(", WiFi connected, IP address: "); Serial.println(WiFi.localIP());
 
-  uint8_t binaryCert[certificatePemCrt.length()];
+  uint8_t binaryCert[certificatePemCrt.length() * 3 / 4];
   int len = b64decode(certificatePemCrt, binaryCert);
   wiFiClient.setCertificate(binaryCert, len);
   
-  uint8_t binaryPrivate[privatePemKey.length()];
+  uint8_t binaryPrivate[privatePemKey.length() * 3 / 4];
   len = b64decode(privatePemKey, binaryPrivate);
   wiFiClient.setPrivateKey(binaryPrivate, len);
 }
