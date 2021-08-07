@@ -45,7 +45,7 @@ XyzajhMJpyuVW1kIjIbvYVUvXWMGXmhFEOe9pPQr89gL/EGxDooM80nTZ2EEO3CL
 6x3/EjAfu4U8PKz1GMBLKqpNl1J3ndt/kmhxh2TtJAIyQBFf11lIw/zETSPfZhQ3
 DhRxmrNJPwUjSyTHwW1VZLpCPuJWxsc7U3mYasQoHoeQfJeZMIYQKfW0h7HajXdW
 1yaW6Ws01lLDzz4i6gf/r7J8MJGUTZopmWnJ/65MO9tSUvV7pBQztGsy/6GPyA==
------END CERTIFICATE-----";
+-----END CERTIFICATE-----
 )EOF";
 
 // xxxxxxxxxx-private.pem.key
