@@ -3,16 +3,13 @@
  * Simplest possible example (that I could come up with) of using an ESP8266 with AWS IoT.
  * No messing with openssl or spiffs just regular pubsub and certificates in string constants
  * 
- * This is working as at 7rd Aug 2021 with the current ESP8266 Arduino core release 3.0.2
+ * This is working as at 7th Aug 2021 with the current ESP8266 Arduino core release 3.0.2
  * 
  * Author: Anthony Elder 
  * License: Apache License v2
  */
 #include <ESP8266WiFi.h>
 #include <PubSubClient.h>
-extern "C" {
-#include "libb64/cdecode.h"
-}
 
 const char* ssid = "<yourSSID>";
 const char* password = "<yourPSWD>";
@@ -164,13 +161,6 @@ void pubSubCheckConnect() {
     pubSubClient.subscribe("inTopic");
   }
   pubSubClient.loop();
-}
-
-int b64decode(String b64Text, uint8_t* output) {
-  base64_decodestate s;
-  base64_init_decodestate(&s);
-  int cnt = base64_decode_block(b64Text.c_str(), b64Text.length(), (char*)output, &s);
-  return cnt;
 }
 
 void setCurrentTime() {
