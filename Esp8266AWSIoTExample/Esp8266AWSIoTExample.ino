@@ -8,8 +8,11 @@
  * Author: Anthony Elder 
  * License: Apache License v2
  */
+#include <time.h>
+#include "sntp.h"
 #include <ESP8266WiFi.h>
 #include <PubSubClient.h>
+
 
 const char* ssid = "<yourSSID>";
 const char* password = "<yourPSWD>";
@@ -121,6 +124,8 @@ void setup() {
   Serial.print(", WiFi connected, IP address: "); Serial.println(WiFi.localIP());
 
   // get current time, otherwise certificates are flagged as expired
+  sntp_stop(); //speeds up the connection with UDP servers
+  sntp_init();// speeds up the connection with UDP servers
   setCurrentTime();
 
   wiFiClient.setClientRSACert(&client_crt, &client_key);
